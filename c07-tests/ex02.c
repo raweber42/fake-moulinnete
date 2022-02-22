@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex02.c                                             :+:      :+:    :+:   */
+/*   pull_requ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/09 22:04:51 by vgoncalv          #+#    #+#             */
-/*   Updated: 2021/04/16 00:22:46 by dludtke-         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:54:54 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int		main(void)
 	printf("| max %d ", 2);
 	printf("| size %d", size1);
 	printf("\n");
+
 	offset = 0;
 	while (offset < 3)
 	{
@@ -76,6 +77,7 @@ int		main(void)
 	printf("| max %d ", 2);
 	printf("| size %d", size2);
 	printf("\n");
+
 	offset = 0;
 	while (offset < 2)
 	{
@@ -86,16 +88,29 @@ int		main(void)
 	printf("| max %d ", -1);
 	printf("| size %d", size3);
 	printf("\n");
+
+	offset = 0;
+	while (offset < -1)
+	{
+		printf("%d ", arr4[offset]);
+		offset++;
+	}
+	printf("| min %d ", -2);
+	printf("| max %d ", -3);
+	printf("| size %d", size4);
+	printf("\n");
+
 	offset = 0;
 	while (offset < 10)
 	{
 		printf("%d ", arr5[offset]);
 		offset++;
 	}
-	printf("| min %d ", -2);
-	printf("| max %d ", -3);
+	printf("| min %d ", 0);
+	printf("| max %d ", 10);
 	printf("| size %d", size5);
 	printf("\n");
+
 	offset = 0;
 	while (offset < 2)
 	{
@@ -105,5 +120,6 @@ int		main(void)
 	printf("| min %d ", -2);
 	printf("| max %d ", 0);
 	printf("| size %d", size6);
+	printf("\n");
 	return (0);
 }
